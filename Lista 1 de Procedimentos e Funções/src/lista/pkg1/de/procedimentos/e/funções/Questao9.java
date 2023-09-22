@@ -10,7 +10,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author aluno
+ * @author aluno o cara mais brabo
  */
 public class Questao9{
     
