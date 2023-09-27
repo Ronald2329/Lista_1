@@ -13,7 +13,7 @@ import javax.swing.JOptionPane;
  */
 public class Questao7 {
         
-    public static  String EnunciadoQuestao7 = "Faça uma função que recebe a média final de um aluno por parâmetro e retorna o seu conceito, conforme a tabela abaixo, para o programa principal:\n" +
+    public static  String EnunciadoQuestao7 = "(Questão 7)- Faça uma função que recebe a média final de um aluno por parâmetro e retorna o seu conceito, conforme a tabela abaixo, para o programa principal:\n" +
 "        Nota Conceito\n" +
 "        de 0,0 a 4,9 D\n" +
 "        de 5,0 a 6,9 C\n" +
@@ -45,7 +45,7 @@ public class Questao7 {
     
     public static void main(String [] args){
        
-        String media = JOptionPane.showInputDialog("Enunciado: "+EnunciadoQuestao7+"\nInforme o valor da media final do aluno: ");
+        String media = JOptionPane.showInputDialog(EnunciadoQuestao7+"\nInforme o valor da media final do aluno: ");
         double mediaFinal = Double.parseDouble(media);
         
         Questao7 questao7 = new Questao7();

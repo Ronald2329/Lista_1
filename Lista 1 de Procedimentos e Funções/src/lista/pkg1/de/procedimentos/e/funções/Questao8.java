@@ -14,7 +14,7 @@ import javax.swing.JOptionPane;
  */
 public class Questao8 {
     
-    public static String EnunciadoQuestao8 = "Faça uma função que recebe, por parâmetro, a altura e o sexo de uma pessoa e retorna o seu peso ideal. \n" +
+    public static String EnunciadoQuestao8 = "(Questão 8)- Faça uma função que recebe, por parâmetro, a altura e o sexo de uma pessoa e retorna o seu peso ideal. \n" +
                   "Para homens, calcular o peso ideal usando a fórmula peso ideal = 72.7 x alt - 58 e, \n" +
                   "para mulheres, peso ideal = 62.1 x alt - 44.7.";
    
@@ -26,14 +26,14 @@ public class Questao8 {
             case "M":
                 
              peso = 72.7 * altura - 58;
-             JOptionPane.showConfirmDialog(null,"O peso ideal com base na altura: "+altura+"cm e o sexo:Masculino é de: "+peso+" kilogramas");
+             JOptionPane.showConfirmDialog(null,"O peso ideal com base na altura: "+altura+"m e o sexo:Masculino é de: "+peso+" kilogramas");
              
             break;
             
             case "F":
                 
              peso = 62.1 * altura - 44.7;
-             JOptionPane.showConfirmDialog(null,"O peso ideal com base na altura: "+altura+"cm e o sexo:Masculino é de: "+peso+" kilogramas");
+             JOptionPane.showConfirmDialog(null,"O peso ideal com base na altura: "+altura+"m e o sexo:Masculino é de: "+peso+" kilogramas");
 
             break;
             
@@ -46,12 +46,12 @@ public class Questao8 {
         
         Questao8 questao8 = new Questao8();
         
-        String sexo = JOptionPane.showInputDialog("Enunciado da questão: "+EnunciadoQuestao8
+        String sexo = JOptionPane.showInputDialog(EnunciadoQuestao8
                 + "\n[Digite M ou m para escolher o sexo Masculino]"
                 + "\n[Digite F ou f para escolher o sexo Feminino]:"
                 + "\n");
         
-        String altura = JOptionPane.showInputDialog("Enunciado da questão: "+EnunciadoQuestao8
+        String altura = JOptionPane.showInputDialog(EnunciadoQuestao8
                 +"\nInforme agora a altura"
                 + "\nObservação: Informe a altura por m em vez de cm exemplo: 1.8 ou 1.80 para 1 metro e 80 centímetros em vez de 180"
                 + "\n");
